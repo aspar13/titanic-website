@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-!+s5ydhvb0-lxs41den*$rj7_2p6$s^21m68xqy2+c$0%56@zf"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['titanicwebsite-production.up.railway.app']
 
