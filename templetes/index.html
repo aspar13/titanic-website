@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Titanic</title>
+</head>
+<body>
+
+	<h1> Titanic Predictor </h1>
+	<h4> Enter the details of a person on the titanic voyage </h4>
+
+	<form action="{% url 'result' %}">
+		
+		<fieldset>
+		<legend>Sex</legend>
+		<input type="radio" name="sex" value="0">Male<br>
+		<input type="radio" name="sex" value="1">Female<br>
+		</fieldset>
+
+		<fieldset>
+		<select name="title">
+			
+			<option value="0">Mr</option>
+			<option value="1">Miss</option>
+			<option value="2">Mrs</option>
+			<option value="3">Master</option>
+			<option value="4">Dr.</option>
+			<option value="5">Rev</option>
+			<option value="6">Officer</option>
+			<option value="7">Royalty</option>
+
+		</select><br>
+		</fieldset>
+
+		<fieldset>
+		<legend>Ticket class</legend>
+		<input type="radio" name="pclass" value="0">1<br>
+		<input type="radio" name="pclass" value="1">2<br>
+		<input type="radio" name="pclass" value="2">3<br>
+		</fieldset>
+	
+		<fieldset> 
+		<legend>Age</legend>
+		<p>Enter age in</p>
+		<input type="text" name="age">
+		</fieldset>
+
+		<fieldset> 
+		<legend>No of sibling/spouses aboard the titanic?</legend>
+		<p>Range between 0 and 8</p>
+		<input type="text" name="sibsp">
+		</fieldset>
+
+		<fieldset> 
+		<legend>No of parents/children aboard the titanic?</legend>
+		<p>Range between 0 and 6</p>
+		<input type="text" name="parch">
+		</fieldset>
+
+		<fieldset>
+		<p>Passanger Fare</p>
+		<input type="text" name="fare">
+		</fieldset>
+		
+		<fieldset>
+		<legend>Embarked</legend>
+		<input type="radio" name="embarked" value="0">S<br>
+		<input type="radio" name="embarked" value="1">C<br>
+		<input type="radio" name="embarked" value="2">Q<br>
+
+		</fieldset>
+		<input type="submit">
+
+
+	</form>
+
+</body>
+</html>
